@@ -1,19 +1,17 @@
+import { Link } from 'react-router-dom';
+import "../styles/navbar.css";
+
 const Navbar = () => (
-  <nav className="bg-[#402F25] p-2">
-    <ul className="flex justify-center list-none m-0 p-0">
+  <nav>
+    <ul className="navbar">
       {[
-        { name: "home", link: "home.html" },
-        { name: "about", link: "about.html" },
-        { name: "services", link: "services.html" },
-        { name: "contact", link: "contact.html" },
+        { name: "home", link: "/" },
+        { name: "about", link: "/about" },
+        { name: "services", link: "/services" },
+        { name: "contact", link: "/contact" },
       ].map((item) => (
-        <li key={item.name} className="mx-4">
-          <a
-            href={item.link}
-            className="text-white text-base no-underline transition-colors duration-300 hover:text-blue-500"
-          >
-            {item.name}
-          </a>
+        <li key={item.name}>
+          <Link to={item.link}>{item.name}</Link>
         </li>
       ))}
     </ul>

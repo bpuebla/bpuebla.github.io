@@ -4,13 +4,12 @@ import Footer from "./Footer";
 import "../styles/home.css";
 
 const HomePage = () => (
-  <div className="font-[Apple_Chancery] text-[24px] leading-[1.6] text-[#ffffed] bg-[#ffffed] min-h-screen flex flex-col">
-    <Navbar />
-    <main
-      className="flex-grow mx-auto p-5 bg-cover bg-center bg-no-repeat border-10 border-[#382222]"
-      style={{ backgroundImage: "url('../assets/back.jpg')" }}
-    >
-      <section className="mx-auto max-w-[50%] p-5 bg-[#402F25] text-[#ffffed] border-double border-5 border-[#aaaa9d] rounded-tr-none rounded-br-none rounded-bl-[10px] rounded-tl-[10px] shadow-inner shadow-black flex justify-center">
+  <div>
+    <header>
+      <Navbar />
+    </header>
+    <main style={{ backgroundImage: `url('/back.jpg')` }}>
+      <section className="content">
         <p>hola soy bape</p>
       </section>
     </main>

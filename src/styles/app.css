@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+
 body {
-    font-family: 'Apple Chancery', cursive;
+    font-family: 'EB Garamond', serif;
     font-size: 24px;
     line-height: 1.6;
     margin: 0;
@@ -11,6 +13,7 @@ body {
 main {
     margin: 0 auto;
     padding: 20px;
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,7 +23,7 @@ main {
 
 section {
     margin: 0 auto;
-    max-width: 50%;
+    margin: 5em 10em 5em 10em;
     padding: 20px;
     background-color: #402F25;
     color: #ffffed;
@@ -28,6 +31,7 @@ section {
 
 .content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     border: 5px double #aaaa9d;
     border-radius: 10px 1px 1px 10px;
@@ -35,27 +39,3 @@ section {
     opacity: 0.95;
 }
 
-footer {
-    background-color: #402F25; /* dark gray */
-    padding: 0.5em 0;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-footer p {
-    margin: 0 1em;
-}
-
-footer a {
-    color: #fff; /* white text */
-    text-decoration: none;
-    font-size: 1em;
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    color: #1e90ff; /* dodger blue */
-}

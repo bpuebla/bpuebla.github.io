@@ -1,61 +1,59 @@
-body {
-    font-family: 'Apple Chancery', cursive;
-    font-size: 24px;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #ffffed;
-    background-color: #ffffed;
-}
-
-main {
-    margin: 0 auto;
-    padding: 20px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.home-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100vh;
-    border: 10px solid #382222;
+    color: #fff5e1;
+    text-align: center;
+    padding: 0 20px;
 }
 
-section {
-    margin: 0 auto;
-    max-width: 50%;
-    padding: 20px;
-    background-color: #402F25;
-    color: #ffffed;
+.blogs-title {
+font-family: 'EB Garamond', serif;
+font-size: 32px;
+color: #fff5e1;
+text-transform: uppercase;
+letter-spacing: 2px;
+margin-bottom: 20px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-.content {
-    display: flex;
-    justify-content: center;
-    border: 5px double #aaaa9d;
-    border-radius: 10px 1px 1px 10px;
-    box-shadow: inset 0 0 10px #000000;
-    opacity: 0.95;
+.blog-list {
+display: inline-block;
+text-align: left;
+background: rgba(0, 0, 0, 0.6);
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
-footer {
-    background-color: #402F25; /* dark gray */
-    padding: 0.5em 0;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+.blog-entry {
+display: flex;
+align-items: center;
+font-family: 'IM Fell English', serif;
+font-size: 20px;
+color: #e0d6c9;
+padding: 8px 0;
 }
 
-footer p {
-    margin: 0 1em;
+.index-number {
+font-size: 18px;
+margin-right: 10px;
+color: #c4a484;
 }
 
-footer a {
-    color: #fff; /* white text */
-    text-decoration: none;
-    font-size: 1em;
-    transition: color 0.3s ease;
+.blog-link {
+color: #e0d6c9;
+text-decoration: none;
+transition: all 0.3s ease;
 }
 
-footer a:hover {
-    color: #1e90ff; /* dodger blue */
+.blog-link:hover {
+text-decoration: underline;
+color: #ffcc80;
+text-shadow: 0px 0px 5px rgba(255, 204, 128, 0.8);
+}
+
+.home-content {
+    width: fit-content;
 }

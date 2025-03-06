@@ -1,3 +1,20 @@
+@media (max-width: 600px) {
+    nav {
+        padding: 0.25em 0;
+    }
+    .navbar {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .navbar li {
+        margin: 0 0.5em;
+    }
+    .navbar a {
+        font-size: 0.5em;
+    }
+}
+
+
 nav {
     background-color: #402F25; /* dark gray */
     padding: 0.5em 0;
@@ -16,12 +33,22 @@ nav {
 }
 
 .navbar a {
+    display: inline-block; /* allow transforms */
     color: #fff; /* white text */
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.25em;
     transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-    color: #1e90ff; /* dodger blue */
+    color: #a5e2f5; /* dodger blue */
+    animation: tilt-shaking 0.25s ease;
+}
+
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
 }

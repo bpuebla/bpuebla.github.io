@@ -1,0 +1,24 @@
+footer {
+    background-color: #402F25; /* dark gray */
+    padding: 0.5em 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    margin: 0 1em;
+}
+
+footer a {
+    color: #fff; /* white text */
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #1e90ff; /* dodger blue */
+}

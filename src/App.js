@@ -5,7 +5,7 @@ import AboutPage from './components/AboutPage';
 import ServicesPage from './components/ServicesPage';
 import ContactPage from './components/ContactPage';
 import PostPage from './components/PostPage';
-import "./styles/home.css";
+import "./styles/app.css";
 
 const App = () => {
   return (
@@ -15,7 +15,8 @@ const App = () => {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/:postId" element={<PostPage />} />
+        <Route path="/posts/:postId" element={<PostPage />} />
+        <Route path="*" element={<div>404 Not Found</div>} />
       </Routes>
     </Router>
   );

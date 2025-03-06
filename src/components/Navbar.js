@@ -8,7 +8,7 @@ const Navbar = () => (
         { name: "home", link: "/" },
         { name: "about", link: "/about" },
         { name: "services", link: "/services" },
-        { name: "contact", link: "/contact" },
+        { name: "contact", link: "mailto:0bautistapuebla@gmail.com" },
       ].map((item) => (
         <li key={item.name}>
           <Link to={item.link}>{item.name}</Link>

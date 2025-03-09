@@ -16,7 +16,7 @@ const Navbar = () => (
         </li>
       ))}
     </ul>
-{/* <SwitchButton></SwitchButton> */}
+    <SwitchButton></SwitchButton>
   </nav>
 );
 

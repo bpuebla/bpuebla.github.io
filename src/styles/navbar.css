@@ -17,7 +17,11 @@
 
 nav {
     background-color: #402F25; /* dark gray */
-    padding: 0.5em 0;
+    padding: 0.5em 1em; /* add horizontal padding */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* center the navbar ul */
+    position: relative; /* enable absolute positioning for button */
 }
 
 .navbar {
@@ -54,6 +58,11 @@ nav {
 }
 
 .switch-button {
+    /* remove margin-left: auto; */
+    position: absolute;
+    right: 1em;  /* add 1em space from right edge */
+    top: 50%;
+    transform: translateY(-50%);
     background-color: #402F25; /* dark gray */
     color: #fff; /* white text */
     border: 1px solid #fff; /* white border */
@@ -62,4 +71,9 @@ nav {
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.switch-button:hover {
+    filter: invert(1);
+    transition: filter 0.3s ease;
 }

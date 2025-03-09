@@ -29,7 +29,7 @@ box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 
 .blog-entry {
 display: flex;
-align-items: center;
+align-items: flex-end;
 font-family: 'IM Fell English', serif;
 font-size: 20px;
 color: #e0d6c9;

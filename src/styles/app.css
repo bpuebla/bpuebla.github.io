@@ -39,3 +39,6 @@ section {
     opacity: 0.95;
 }
 
+.dark-mode {
+    filter: invert(1);
+}

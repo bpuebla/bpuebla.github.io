@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import "../styles/navbar.css";
+import SwitchButton from './SwitchMode';
 
 const Navbar = () => (
   <nav>
@@ -15,6 +16,7 @@ const Navbar = () => (
         </li>
       ))}
     </ul>
+{/* <SwitchButton></SwitchButton> */}
   </nav>
 );
 

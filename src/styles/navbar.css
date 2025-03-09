@@ -52,3 +52,14 @@ nav {
     75% { transform: rotate(-5deg); }
     100% { transform: rotate(0deg); }
 }
+
+.switch-button {
+    background-color: #402F25; /* dark gray */
+    color: #fff; /* white text */
+    border: 1px solid #fff; /* white border */
+    border-radius: 50px;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}

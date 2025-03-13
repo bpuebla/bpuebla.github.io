@@ -14,6 +14,16 @@
     }
 }
 
+@media (max-width: 900px) {
+    nav {
+        justify-content: space-between;
+    }
+    .switch-button {
+        position: static;
+        transform: none;
+        margin: 0 1em 0 0; /* button with 1em right spacing */
+    }
+}
 
 nav {
     background-color: #402F25; /* dark gray */
@@ -75,5 +85,5 @@ nav {
 
 .switch-button:hover {
     filter: invert(1);
-    transition: filter 0.3s ease;
+    transition: filter 0.8s ease;
 }

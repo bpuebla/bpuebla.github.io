@@ -11,7 +11,7 @@ const SwitchButton = () => {
 
   return (
     <button className="switch-button" onClick={handleClick}>
-      {isDarkMode ? "Light Mode" : "Dark Mode"}
+      {isDarkMode ? "light mode" : "dark mode"}
     </button>
   );
 };

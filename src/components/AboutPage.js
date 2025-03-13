@@ -7,7 +7,7 @@ const AboutPage = () => (
     <header>
       <Navbar />
     </header>
-    <main style={{ backgroundImage: `url('/back.jpg')` }}>
+    <main className="container" style={{ backgroundImage: `url('/back.jpg')` }}>
       <section className="content">
         <p>This is the about page</p>
       </section>

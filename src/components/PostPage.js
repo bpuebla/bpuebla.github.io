@@ -25,7 +25,7 @@ const PostPage = () => {
       <header>
         <Navbar />
       </header>
-      <main style={{ backgroundImage: `url('/back.jpg')` }}>
+      <main className="container" style={{ backgroundImage: `url('/back.jpg')` }}>
         <section className="content">
           <p>{content}</p>
         </section>

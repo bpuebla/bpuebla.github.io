@@ -43,7 +43,7 @@ const HomePage = () => {
       <header>
         <Navbar />
       </header>
-      <main className="home-container" style={{ backgroundImage: `url('/back.jpg')` }}>
+      <main className="container" style={{ backgroundImage: `url('/back.jpg')` }}>
         <section className="content home-content">
           <h2 className="blogs-title">Library of Thoughts</h2>
           <div className="blog-list">
